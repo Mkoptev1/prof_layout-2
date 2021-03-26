@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,900;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -380,4 +382,107 @@
 
 .footer-soc-item {
     padding: 24px 0px 24px 8px;
+}
+
+.catalog-banner {
+    background: #F8F3F4;
+}
+
+.catalog-banner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+    
+}
+
+.catalog-banner-heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.catalog-banner-crumbl {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.catalog-banner-crumbl-color {
+    font-weight: 700;
+    color: #F16D7F;
+}
+
+.filter-container {
+    padding-top: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 360px;
+}
+
+.filter-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-right: 28px;
+}
+
+.filter-icon {
+    padding-left: 11px;
+}
+
+.filter-heading-bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.filter-heading-normal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.catalog-product {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+}
+
+.catalog-product-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    width: 280px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+}
+
+.pagination-pages {
+    width: 200px;
+    text-align: center;
 }
