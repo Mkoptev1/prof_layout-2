@@ -680,7 +680,7 @@
 }
 
 .cart-padding:not(:last-child) {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .cart-options-form {
