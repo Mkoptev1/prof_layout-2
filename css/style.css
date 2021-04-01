@@ -506,20 +506,29 @@
 
 .pagination {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 48px;
-    width: 280px;
-    height: 43px;
+    width: 284px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
-    border-radius: 5px;
+    border-radius: 4px;
+}
+
+.pagination-bttn {
+    background: #FFFFFF;
+    outline: none;
+    border: none;
+    padding: 15px;
 }
 
 .pagination-pages {
-    width: 200px;
     text-align: center;
-    list-style-type: none;    
+    list-style-type: none;  
+}
+
+.pagination-page {
+    padding-right: 15px; 
 }
 
 .pagination-current-page {
@@ -654,15 +663,16 @@
     height: 47px;
     outline: none;
     border: 1px solid #FF6A6A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
 }
 
 .add-card-bttn1-icon {
     padding-left: 23px;
     padding-right: 23px;
-}
-
-.add-card-bttn1-desc {
-    display: inline-block;
 }
 
 .feedback-product {
