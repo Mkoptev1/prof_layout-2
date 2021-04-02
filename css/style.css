@@ -10,6 +10,10 @@
   padding-top: 96px;
 }
 
+.margin-top-96 {
+  margin-top: 96px;
+}
+
 .margin-top-128 {
   margin-top: 128px;
 }
@@ -234,7 +238,8 @@
   text-align: left;
 }
 
-.product-card-title {
+.product-card-title a {
+  text-decoration: none;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
