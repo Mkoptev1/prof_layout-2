@@ -16,7 +16,7 @@
         padding: 15px;
     }
 
-    &-pages {
+    &-wrap {
         text-align: center;
         list-style-type: none;
 
@@ -25,8 +25,23 @@
         }
     }
 
-    &-page {
-        padding-right: 15px; 
+    &-item {
+        color: #C4C4C4;
+
+        &:nth-child(-n+5) {
+            padding-right: 15px;
+        }
+    }
+
+    &-item-bttn {
+        border: none;
+        outline: none;
+        background: #FFFFFF;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #C4C4C4;
     }
 
     &-current-page {

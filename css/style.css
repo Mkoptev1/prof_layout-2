@@ -594,17 +594,32 @@
   padding: 15px;
 }
 
-.pagination-pages {
+.pagination-wrap {
   text-align: center;
   list-style-type: none;
 }
 
-.pagination-pages a {
+.pagination-wrap a {
   text-decoration: none;
 }
 
-.pagination-page {
+.pagination-item {
+  color: #C4C4C4;
+}
+
+.pagination-item:nth-child(-n+5) {
   padding-right: 15px;
+}
+
+.pagination-item-bttn {
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
 }
 
 .pagination-current-page {
