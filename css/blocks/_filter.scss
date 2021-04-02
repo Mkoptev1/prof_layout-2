@@ -1,0 +1,40 @@
+.filter-container {
+    padding-top: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 360px;
+}
+
+.filter-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-right: 28px;
+}
+
+.filter-icon {
+    padding-left: 11px;
+}
+
+.filter-heading-bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.filter-heading-normal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
