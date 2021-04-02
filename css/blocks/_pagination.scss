@@ -8,28 +8,28 @@
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     border-radius: 4px;
-}
 
-.pagination-bttn {
-    background: #FFFFFF;
-    outline: none;
-    border: none;
-    padding: 15px;
-}
+    &-bttn {
+        background: #FFFFFF;
+        outline: none;
+        border: none;
+        padding: 15px;
+    }
 
-.pagination-pages {
-    text-align: center;
-    list-style-type: none;  
-}
+    &-pages {
+        text-align: center;
+        list-style-type: none;
 
-.pagination-page {
-    padding-right: 15px; 
-}
+        & a {
+            text-decoration: none;
+        }
+    }
 
-.pagination-current-page {
-    color: $pink;
-}
+    &-page {
+        padding-right: 15px; 
+    }
 
-.pagination-pages a {
-    text-decoration: none;
+    &-current-page {
+        color: $pink;
+    }
 }

@@ -5,20 +5,20 @@
     padding-top: 11px;
     height: 777px;
     background-color: #F7F7F7;;
-}
 
-.slider-bttn {
-    background: rgba(42, 42, 42, 0.15);
-    width: 47px;
-    height: 47px;
-    outline: none;
-    border: none;
-}
+    &-bttn {
+        background: rgba(42, 42, 42, 0.15);
+        width: 47px;
+        height: 47px;
+        outline: none;
+        border: none;
 
-.slider-bttn:hover svg {
-    fill: $pink;
-}
+        &:hover svg {
+            fill: $pink;
+        }
+    }
 
-.slider-img {
-    height: 724px;
+    &-img {
+        height: 724px;
+    }
 }

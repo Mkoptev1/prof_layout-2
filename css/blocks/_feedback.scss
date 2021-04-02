@@ -7,27 +7,27 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 448px;
-}
 
-.feedback-wrap {
-    display: flex;
-    align-items: center;
-}
+    &-wrap {
+        display: flex;
+        align-items: center;
+    }
 
-.feedback-face {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
+    &-face {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
 
-.feedback-face-desc {
-    padding-top: 30px;
-    width: 360px;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222224;
+    &-face-desc {
+        padding-top: 30px;
+        width: 360px;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    }
 }
