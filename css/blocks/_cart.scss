@@ -20,6 +20,20 @@
         width: 319px;
     }
 
+    &-item-img-brd {
+        width: 262px;
+        height: 306px;
+        overflow: hidden;
+    }
+
+    &-item-img {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
     &-item-name {
         padding-top: 22px;
         padding-bottom: 42px;
@@ -60,7 +74,7 @@
         margin-left: 40px;
         width: 60px;
         height: 24px;
-        border: 1px solid #EAEAEA;
+        border: 1px #EAEAEA solid;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
