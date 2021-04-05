@@ -6,6 +6,10 @@
   padding-top: 50px;
 }
 
+.padding-top-64 {
+  padding-top: 64px;
+}
+
 .padding-top-96 {
   padding-top: 96px;
 }
@@ -150,6 +154,129 @@
   font-size: 32px;
   line-height: 38px;
   color: #F16D7F;
+}
+
+.reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reg-form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reg-form-desc {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.reg-form-input {
+  padding: 13px 17px 16px 17px;
+  margin-bottom: 20px;
+  width: 365px;
+  border: 1px solid #A4A4A4;
+  outline: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.reg-form-radio-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 32px;
+}
+
+.reg-form-radio-desc {
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.reg-form-radio-val {
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #A4A4A4;
+}
+
+.reg-form-help {
+  width: 365px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.reg-form-bttn {
+  width: 167px;
+  height: 50px;
+  margin-top: 40px;
+  outline: none;
+  border: none;
+  background: #F16D7F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.reg-form-bttn-img {
+  padding-left: 20px;
+}
+
+.reg-benefit {
+  padding-left: 128px;
+}
+
+.reg-benefit-text {
+  padding-bottom: 22px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.reg-benefit-item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  list-style: none;
+}
+
+.reg-benefit-item:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.reg-benefit-item::before {
+  padding-right: 23px;
+  content: url("../img/check.svg");
 }
 
 .offer {
