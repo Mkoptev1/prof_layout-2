@@ -235,17 +235,28 @@
   height: 50px;
   margin-top: 40px;
   outline: none;
-  border: none;
-  background: #F16D7F;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
+}
+
+.reg-form-bttn:hover {
+  color: #F16D7F;
+  background: #FFFFFF;
+  border: 1px solid #F16D7F;
+}
+
+.reg-form-bttn:hover svg {
+  fill: #F16D7F;
 }
 
 .reg-form-bttn-img {
   padding-left: 20px;
+  fill: #FFFFFF;
 }
 
 .reg-benefit {
@@ -433,20 +444,27 @@
   text-align: left;
 }
 
-.product-button {
+.product-all-bttn {
   margin-top: 48px;
-  padding: 14px 38px;
+  width: 211px;
+  height: 47px;
   text-align: center;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #F16D7F;
-  border: 1px solid #F16D7F;
-  text-decoration: none;
-  display: inline-block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  outline: none;
+  color: #F16D7F;
+  background: #FFFFFF;
+  border: 1px solid #F16D7F;
+}
+
+.product-all-bttn:hover {
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
 }
 
 .fetured-items {
@@ -964,21 +982,32 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-top: 48px;
-  background: #FFFFFF;
   width: 211px;
   height: 47px;
   outline: none;
-  border: 1px solid #F16D7F;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+  background: #FFFFFF;
+  border: 1px solid #F16D7F;
+}
+
+.add-card-bttn:hover {
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
+}
+
+.add-card-bttn:hover svg {
+  fill: #FFFFFF;
 }
 
 .add-card-bttn1-icon {
   padding-left: 23px;
   padding-right: 23px;
+  fill: #F16D7F;
 }
 
 .cart {
@@ -1093,12 +1122,18 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #000000;
-  background: #FFFFFF;
-  border: 1px #A4A4A4 solid;
   width: 234px;
   height: 49px;
   outline: none;
+  color: #4A4A4A;
+  background: #FFFFFF;
+  border: 1px solid #A4A4A4;
+}
+
+.cart-bttn:hover {
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
 }
 
 .cart-block-bttn-left {
@@ -1133,16 +1168,22 @@
 
 .cart-address-bttn {
   margin-top: 24px;
-  border: 1px #A4A4A4 solid;
-  background: #FFFFFF;
   width: 102px;
   height: 35px;
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
-  color: #4A4A4A;
   outline: none;
+  color: #4A4A4A;
+  background: #FFFFFF;
+  border: 1px solid #A4A4A4;
+}
+
+.cart-address-bttn:hover {
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
 }
 
 .cart-address-form {
@@ -1217,13 +1258,19 @@
   margin-top: 17px;
   width: 273px;
   height: 50px;
-  background: #F16D7F;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
   outline: none;
+  color: #FFFFFF;
+  background: #F16D7F;
   border: none;
+}
+
+.cart-total-bttn:hover {
+  color: #F16D7F;
+  background: #FFFFFF;
+  border: 1px solid #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */

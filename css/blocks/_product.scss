@@ -81,17 +81,20 @@
         text-align: left;
     }
 
-    &-button {
+    &-all-bttn {
         margin-top: 48px;
-        padding: 14px 38px;
+        width: 211px;
+        height: 47px;
         text-align: center;
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
-        color: $pink;
-        border: 1px solid $pink;
-        text-decoration: none;
-        display: inline-block;
         align-self: center;
+        outline: none;
+        @include bttn-unhover-white;
+        
+        &:hover {
+            @include bttn-hover-pink;
+        }
     }
 }

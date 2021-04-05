@@ -1,0 +1,29 @@
+@mixin bttn-hover-pink {
+    color: #FFFFFF;
+    background: $pink;
+    border: none;
+}
+
+@mixin bttn-unhover-white {
+    color: $pink;
+    background: #FFFFFF;
+    border: 1px solid $pink;
+}
+
+@mixin bttn-unhover-white-gray {
+    color: #4A4A4A;
+    background: #FFFFFF;
+    border: 1px solid #A4A4A4;;
+}
+
+@mixin bttn-hover-white {
+    color: $pink;
+    background: #FFFFFF;
+    border: 1px solid $pink;
+}
+
+@mixin bttn-unhover-pink {
+    color: #FFFFFF;
+    background: $pink;
+    border: none;
+}

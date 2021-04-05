@@ -65,17 +65,24 @@
         height: 50px;
         margin-top: 40px;
         outline: none;
-        border: none;
-        background: $pink;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        color: #FFFFFF;
+        @include bttn-unhover-pink;
+
+        &:hover {
+            @include bttn-hover-white;
+
+            svg {
+                fill: $pink;
+            }
+        }
     }
 
     &-form-bttn-img {
         padding-left: 20px;
+        fill: #FFFFFF;
     }
 
     &-benefit {
