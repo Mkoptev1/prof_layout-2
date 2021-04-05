@@ -816,15 +816,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 11px;
   height: 777px;
   background-color: #F7F7F7;
+  position: relative;
 }
 
 .slider-bttn {
@@ -833,6 +834,15 @@
   height: 47px;
   outline: none;
   border: none;
+  position: absolute;
+}
+
+.slider-bttn-left {
+  left: 5px;
+}
+
+.slider-bttn-right {
+  right: 5px;
 }
 
 .slider-bttn:hover svg {
