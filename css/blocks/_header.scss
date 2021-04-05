@@ -13,6 +13,14 @@
         align-items:flex-end
     }
 
+    &-menu-logo {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
     &-menu-left-item {
         padding-right: 41px;
     }

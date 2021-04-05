@@ -99,6 +99,18 @@
           align-items: flex-end;
 }
 
+.header-menu-logo {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.header-menu-logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .header-menu-left-item {
   padding-right: 41px;
 }
