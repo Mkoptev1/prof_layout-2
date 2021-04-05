@@ -1,0 +1,33 @@
+.feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+    background-image: url(../img/footer_form_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 448px;
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &-face {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    &-face-desc {
+        padding-top: 30px;
+        width: 360px;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    }
+}

@@ -1,0 +1,50 @@
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    width: 284px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+
+    &-bttn {
+        background: #FFFFFF;
+        outline: none;
+        border: none;
+        padding: 15px;
+    }
+
+    &-wrap {
+        text-align: center;
+        list-style-type: none;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    &-item {
+        color: #C4C4C4;
+
+        &:nth-child(-n+5) {
+            padding-right: 15px;
+        }
+    }
+
+    &-item-bttn {
+        border: none;
+        outline: none;
+        background: #FFFFFF;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #C4C4C4;
+    }
+
+    &-current-page {
+        color: $pink;
+    }
+}

@@ -40,87 +40,86 @@
 
     <main class="content">
         <div class="catalog-banner">
-            <div class="catalog-banner-wrap wrap">
-                <h1 class="catalog-banner-heading">NEW ARRIVALS</h1>
-                <p class="catalog-banner-crumbl">HOME / MEN / <span class="catalog-banner-crumbl-color">NEW
-                        ARRIVALS</span></p>
-            </div>
-        </div>
-
-        <section class="slider">
-            <button class="slider-bttn">
-                <svg width="9" height="14" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" />
-                </svg>
-            </button>
-            <img class="slider-img" src="img/slider-1.png" alt="Слайд 1">
-            <button class="slider-bttn">
-                <svg width="9" height="14" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" />
-                </svg>
-            </button>
-        </section>
-
-        <div class="add-card wrap">
-            <div class="add-card-wrap wrap">
-                <p class="add-card-collection">WOMEN COLLECTION</p>
-                <hr class="add-card-line1">
-                <p class="add-card-heading">MOSCHINO CHEAP AND CHIC</p>
-                <p class="add-card-desc">Compellingly actualize fully researched processes before proactive
-                    outsourcing. Progressively
-                    syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
-                    core competencies rather than exceptional portals. </p>
-                <p class="add-card-price">$561</p>
-                <hr class="add-card-line2">
-                <div class="add-card-options">
-                    <p class="add-card-optn-desc">CHOOSE COLOR</p>
-                    <img class="add-card-optn-icon" src="img/filter-arrow.svg" alt="Фильт">
-                    <p class="add-card-optn-desc">CHOOSE SIZE </p>
-                    <img class="add-card-optn-icon" src="img/filter-arrow.svg" alt="Фильт">
-                    <p class="add-card-optn-desc">QUANTITY</p>
-                    <img class="add-card-optn-icon" src="img/filter-arrow.svg" alt="Фильт">
-                </div>
-                <button class="add-card-bttn">
-                    <img class="add-card-bttn1-icon" src="img/add-to-card.svg" alt="Корзина">
-                    Add to Cart
-                </button>
-            </div>
-        </div>
-
-        <div class="catalogs padding-top-130 wrap">
-            <div class="catalogs-card">
-                <div class="product-card-item">
-                    <img class="product-card-img" src="img/product-4.jpg" alt="product-1">
-                    <div class="product-card-text">
-                        <h4 class="product-card-title">ELLERY X M'O CAPSULE</h4>
-                        <p class="product-card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="product-card-price">$52.00</p>
-                    </div>
-                </div>
-                <div class="product-card-item">
-                    <img class="product-card-img" src="img/product-3.jpg" alt="product-2">
-                    <div class="product-card-text">
-                        <h4 class="product-card-title">ELLERY X M'O CAPSULE</h4>
-                        <p class="product-card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="product-card-price">$52.00</p>
-                    </div>
-                </div>
-                <div class="product-card-item">
-                    <img class="product-card-img" src="img/product-6.jpg" alt="product-3">
-                    <div class="product-card-text">
-                        <h4 class="product-card-title">ELLERY X M'O CAPSULE</h4>
-                        <p class="product-card-desc">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="product-card-price">$52.00</p>
-                    </div>
-                </div>
-            </div>
+            <section class="catalog-banner-wrap wrap">
+                <h1 class="catalog-banner-heading">SHOPPING CART</h1>
+            </section>
         </div>
     </main>
 
-    <aside class="feedback margin-top-128">
+    <div class="cart wrap padding-top-96">
+        <div class="cart-wrap">
+            <div class="cart-item cart-padding">
+                <img class="cart-item-img" src="img/cart-1.jpg" alt="Товар 1">
+                <div class="cart-options">
+                    <p class="cart-item-name">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cart-options-desc">Price: <span class="cart-options-value cart-price-value">$300</span>
+                    </p>
+                    <p class="cart-options-desc">Color: <span class="cart-options-value">Red</span></p>
+                    <p class="cart-options-desc">Size: <span class="cart-options-value">Xl</span></p>
+                    <div class="cart-qnt-block">
+                        <p class="cart-options-desc">Quantity:</p>
+                        <input class="cart-qnt-input cart-options-value" type="number" min="0" step="1">
+                    </div>
+                </div>
+                <div class="cart-delete">
+                    <button class="cart-bttn-del">
+                        <img src="img/cart-delete.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="cart-item cart-padding">
+                <img class="cart-item-img" src="img/cart-2.jpg" alt="Товар 1">
+                <div class="cart-options">
+                    <p class="cart-item-name">MANGO PEOPLE T-SHIRT</p>
+                    <p class="cart-options-desc">Price: <span class="cart-options-value cart-price-value">$300</span>
+                    </p>
+                    <p class="cart-options-desc">Color: <span class="cart-options-value">Red</span></p>
+                    <p class="cart-options-desc">Size: <span class="cart-options-value">Xl</span></p>
+                    <div class="cart-qnt-block">
+                        <p class="cart-options-desc">Quantity:</p>
+                        <input class="cart-qnt-input cart-options-value" type="number" min="0" step="1">
+                    </div>
+                </div>
+                <div class="cart-delete">
+                    <button class="cart-bttn-del">
+                        <img src="img/cart-delete.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-address">
+            <div class="cart-address-wrap">
+                <p class="cart-address-desc">SHIPPING ADRESS</p>
+                <form class="cart-address-form" action="#">
+                    <input class="cart-address-input" placeholder="Bangladesh" type="text">
+                    <input class="cart-address-input" placeholder="State" type="text">
+                    <input class="cart-address-input" placeholder="Postcode / Zip" type="text">
+                    <button class="cart-address-bttn">GET A QUOTE</button>
+                </form>
+                <div class="cart-total">
+                    <p class="cart-sub-total-desc">SUB TOTAL <span class="cart-sub-total-value">$900</span></p>
+                    <p class="cart-grand-total-desc">GRAND TOTAL <span class="cart-grand-total-value">$900</span></p>
+                    <div class="cart-bottom">
+                        <hr class="cart-total-line">
+                        <button class="cart-total-bttn">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-block-bttn wrap">
+        <div class="cart-block-bttn-wrap">
+            <div class="cart-block-bttn-left cart-block-bttn-wrap">
+                <button class="cart-bttn">CLEAR SHOPPING CART</button>
+                <button class="cart-bttn">CONTINUE SHOPPING</button>
+            </div>
+            <div class="cart-block-bttn-right">
+            </div>
+        </div>
+    </div>
+
+    <aside class="feedback">
         <div class="feedback-wrap wrap">
             <div class="feedback-face">
                 <img class="feedback-face-img" src="img/footer-face.png" alt="author">

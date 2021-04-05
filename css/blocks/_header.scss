@@ -1,0 +1,23 @@
+.header {
+    background: #222222;
+    padding: 18px 0px;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-menu {
+        display: flex;
+        list-style-type: none;
+        align-items:flex-end
+    }
+
+    &-menu-left-item {
+        padding-right: 41px;
+    }
+
+    &-menu-right-item {
+        padding-left: 33px;
+    }
+}

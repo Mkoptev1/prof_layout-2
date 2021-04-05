@@ -1,0 +1,40 @@
+.footer {
+    background: #222224;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-copyright {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    &-soc-menu {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &-soc-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px 0px 24px 8px;
+        width: 32px;
+        height: 32px;
+        background-color: #FFFFFF;
+    }
+
+    &-soc-item:hover {
+        background-color: $pink;
+    }
+
+    &-soc-item:hover svg{
+        fill: #FFFFFF;
+    }
+}
