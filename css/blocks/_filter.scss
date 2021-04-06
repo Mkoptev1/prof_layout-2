@@ -20,8 +20,22 @@
         padding-right: 28px;
     }
 
-    &-icon {
+    &-icon-arrow {
         padding-left: 11px;
+        @include svg-unhover-gray;
+
+        &:hover {
+            @include svg-hover-pink;
+        }
+    }
+
+    &-icon-sort {
+        padding-left: 11px;
+        @include svg-unhover-black;
+
+        &:hover {
+            @include svg-hover-pink;
+        }
     }
 
     &-heading-bold {

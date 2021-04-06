@@ -4,6 +4,18 @@
     border: none;
 }
 
+@mixin bttn-hover-white {
+    color: $pink;
+    background: #FFFFFF;
+    border: 1px solid $pink;
+}
+
+@mixin bttn-unhover-pink {
+    color: #FFFFFF;
+    background: $pink;
+    border: none;
+}
+
 @mixin bttn-unhover-white {
     color: $pink;
     background: #FFFFFF;
@@ -16,14 +28,26 @@
     border: 1px solid #A4A4A4;;
 }
 
-@mixin bttn-hover-white {
-    color: $pink;
-    background: #FFFFFF;
-    border: 1px solid $pink;
+@mixin svg-hover-pink {
+    fill: $pink;
 }
 
-@mixin bttn-unhover-pink {
-    color: #FFFFFF;
-    background: $pink;
-    border: none;
+@mixin svg-hover-white {
+    fill: #FFFFFF;
+}
+
+@mixin svg-unhover-pink {
+    fill: $pink;
+}
+
+@mixin svg-unhover-white {
+    fill: #FFFFFF;
+}
+
+@mixin svg-unhover-black {
+    fill: #000;
+}
+
+@mixin svg-unhover-gray {
+    fill: #6F6E6E;
 }

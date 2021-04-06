@@ -99,6 +99,14 @@
           align-items: flex-end;
 }
 
+.header-menu-icon {
+  fill: #FFFFFF;
+}
+
+.header-menu-icon:hover {
+  fill: #F16D7F;
+}
+
 .header-menu-logo {
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
@@ -776,8 +784,22 @@
   padding-right: 28px;
 }
 
-.filter-icon {
+.filter-icon-arrow {
   padding-left: 11px;
+  fill: #6F6E6E;
+}
+
+.filter-icon-arrow:hover {
+  fill: #F16D7F;
+}
+
+.filter-icon-sort {
+  padding-left: 11px;
+  fill: #000;
+}
+
+.filter-icon-sort:hover {
+  fill: #F16D7F;
 }
 
 .filter-heading-bold {
@@ -820,7 +842,18 @@
   padding: 15px;
 }
 
+.pagination-bttn-icon {
+  fill: #000;
+}
+
+.pagination-bttn-icon:hover {
+  fill: #F16D7F;
+}
+
 .pagination-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   list-style-type: none;
 }
@@ -998,6 +1031,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 65px;
 }
 
@@ -1010,8 +1046,16 @@
   color: #6F6E6E;
 }
 
+.add-card-optn-icon {
+  fill: #6F6E6E;
+}
+
 .add-card-optn-icon:not(:last-child) {
   padding-right: 23px;
+}
+
+.add-card-optn-icon:hover {
+  fill: #F16D7F;
 }
 
 .add-card-bttn {
