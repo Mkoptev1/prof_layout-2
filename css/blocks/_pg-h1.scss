@@ -1,0 +1,31 @@
+.pg-h1 {
+    background: $light-pink;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 148px;    
+    }
+
+    &-desc {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: $pink;
+    }
+
+    &-crumbl {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+
+    &-crumbl-color {
+        font-weight: 700;
+        color: $pink;
+    }
+}

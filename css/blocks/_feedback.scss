@@ -20,6 +20,14 @@
         width: 50%;
     }
 
+    &-face-img {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
     &-face-desc {
         padding-top: 30px;
         width: 360px;

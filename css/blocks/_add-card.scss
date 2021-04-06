@@ -91,20 +91,27 @@
         align-items: center;
         justify-content: flex-start;
         margin-top: 48px;
-        background: #FFFFFF;
         width: 211px;
         height: 47px;
         outline: none;
-        border: 1px solid $pink;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
-        color: $pink;
+        @include bttn-unhover-white;
+        
+        &:hover {
+           @include bttn-hover-pink;
+        
+            svg {
+                fill: #FFFFFF;
+            }
+        }
     }
 
     &-bttn1-icon {
         padding-left: 23px;
         padding-right: 23px;
+        fill: $pink;
     }
 }

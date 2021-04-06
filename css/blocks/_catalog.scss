@@ -1,37 +1,3 @@
-.catalog {
-    &-banner {
-        background: #F8F3F4;
-    }
-
-    &-banner-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 148px;
-    }
-
-    &-banner-heading {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
-        color: $pink;
-    }
-
-    &-banner-crumbl {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
-    }
-
-    &-banner-crumbl-color {
-        font-weight: 700;
-        color: $pink;
-    }
-}
-
 .catalogs {
     display: flex;
     flex-direction: column;

@@ -20,6 +20,20 @@
         width: 319px;
     }
 
+    &-item-img-brd {
+        width: 262px;
+        height: 306px;
+        overflow: hidden;
+    }
+
+    &-item-img {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
     &-item-name {
         padding-top: 22px;
         padding-bottom: 42px;
@@ -60,7 +74,7 @@
         margin-left: 40px;
         width: 60px;
         height: 24px;
-        border: 1px solid #EAEAEA;
+        border: 1px #EAEAEA solid;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -98,12 +112,14 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
-        color: #000000;
-        background: #FFFFFF;
-        border: 1px #A4A4A4 solid;
         width: 234px;
         height: 49px;
         outline: none;
+        @include bttn-unhover-white-gray;
+
+        &:hover {
+            @include bttn-hover-pink;
+        }
     }
 
     &-block-bttn-left {
@@ -138,16 +154,18 @@
 
     &-address-bttn {
         margin-top: 24px;
-        border: 1px #A4A4A4 solid;
-        background: #FFFFFF;
         width: 102px;
         height: 35px;
         font-style: normal;
         font-weight: 300;
         font-size: 11px;
         line-height: 13px;
-        color: #4A4A4A;
         outline: none;
+        @include bttn-unhover-white-gray;
+
+        &:hover {
+            @include bttn-hover-pink;
+        }
     }
 
     &-address-form {
@@ -210,13 +228,15 @@
         margin-top: 17px;
         width: 273px;
         height: 50px;
-        background: $pink;
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        color: #FFFFFF;
         outline: none;
-        border: none;
+        @include bttn-unhover-pink;
+
+        &:hover {
+            @include bttn-hover-white;
+        }
     }
 }
