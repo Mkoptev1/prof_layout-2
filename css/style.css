@@ -106,6 +106,10 @@
   fill: #6F6E6E;
 }
 
+.menu-close-icon:hover {
+  fill: #F16D7F;
+}
+
 .pg-h1 {
   background: #F8F3F4;
 }
