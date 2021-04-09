@@ -876,6 +876,19 @@
   fill: #FFFFFF;
 }
 
+.filter {
+  position: relative;
+  width: 360px;
+  outline: none;
+  border: none;
+}
+
+.filter[open] {
+  padding-left: 16px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
 .filter-container {
   padding-top: 51px;
   display: -webkit-box;
@@ -922,6 +935,42 @@
 
 .filter-icon-arrow:hover {
   fill: #F16D7F;
+}
+
+.filter-item-desc {
+  display: block;
+  border-left: 10px solid #F16D7F;
+  border-bottom: 1px solid #F16D7F;
+  padding: 11px;
+  margin-top: 16px;
+  margin-right: 16px;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.filter-item-desc:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.filter-item-desc:last-child {
+  margin-bottom: 16px;
+}
+
+.filter-item-ul {
+  padding-left: 17px;
+}
+
+.filter-item-li {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
 }
 
 .filter-icon-sort {

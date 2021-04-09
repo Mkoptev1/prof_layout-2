@@ -1,4 +1,14 @@
 .filter {
+    position: relative;
+    width: 360px;
+    outline: none;
+    border: none;
+
+    &[open] {
+        padding-left: 16px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
     &-container {
         padding-top: 51px;
         display: flex;
@@ -27,6 +37,42 @@
         &:hover {
             @include svg-hover-pink;
         }
+    }
+
+    &-item-desc {
+        display: block;
+        border-left: 10px solid $pink;
+        border-bottom: 1px solid $pink;
+        padding: 11px;
+        margin-top: 16px;
+        margin-right: 16px;
+        outline: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $pink;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        &:last-child {
+            margin-bottom: 16px;
+        }
+    }
+
+    &-item-ul {
+        padding-left: 17px;
+    }
+
+    &-item-li {
+        list-style-type: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
     }
 
     &-icon-sort {
