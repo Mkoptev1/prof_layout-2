@@ -25,6 +25,14 @@
         height: 38px;
     }
 
+    &-img-src {
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
     &-title {
         padding-top: 28px;
         font-style: normal;

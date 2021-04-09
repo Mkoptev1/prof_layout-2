@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 48px;
+    margin-top: 18px;
     width: 284px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -16,7 +16,16 @@
         padding: 15px;
     }
 
+    &-bttn-icon {
+        @include svg-unhover-black;
+
+        &:hover {
+            @include svg-hover-pink;
+        }
+    }
+
     &-wrap {
+        display: flex;
         text-align: center;
         list-style-type: none;
 

@@ -1,0 +1,209 @@
+.filter {
+    position: relative;
+    box-sizing: border-box;
+    width: 360px;
+    outline: none;
+    border: none;
+
+    &-optn-color {
+        &:hover .filter-desc {
+            color: $pink;
+        }
+
+        &:hover svg {
+            @include svg-hover-pink;
+        }
+
+        &[open] {
+            color: $pink;
+        }
+
+        &[open] svg{
+            fill: $pink;
+        }
+        
+        &[open] .filter-desc{
+            color: $pink;
+        }
+    }
+
+    &-desc {
+        white-space:nowrap;
+        outline: none;
+        border: none;
+        list-style-type: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    &-block {
+        margin-top: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        background: #FFFFFF;
+        left: inherit;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        z-index: 1;
+    }
+
+    &-block-filter {
+        padding-left: 17px;
+        width: 360px;
+    }
+
+    &-container {
+        padding-top: 51px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-section {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 360px;
+    }
+
+    &-row {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-right: 28px;
+    }
+
+    &-icon-arrow {
+        padding-left: 11px;
+        @include svg-unhover-gray;
+    }
+
+    &-item-desc {
+        display: block;
+        border-left: 10px solid $pink;
+        border-bottom: 1px solid #EBEBEB;
+        padding: 11px;
+        margin-top: 16px;
+        margin-right: 16px;
+        outline: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $pink;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        &:last-child {
+            margin-bottom: 16px;
+        }
+    }
+
+    &-item-ul {
+        padding-left: 17px;
+    }
+
+    &-item-li {
+        list-style-type: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+
+        &:not(:last-child) {
+            padding-bottom: 11px;
+        }
+    }
+
+    &-icon-sort {
+        padding-left: 11px;
+        @include svg-unhover-black;
+
+        &:hover {
+            @include svg-hover-pink;
+        }
+    }
+
+    &-heading-bold {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    &-heading-normal{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+
+    &-value {
+        &:hover .filter-desc2 {
+            color: $pink;
+        }
+
+        &:hover svg {
+            fill: $pink;
+        }
+
+        &:not(:first-child) {
+            padding-left: 28px;
+        }
+    }
+
+    &-trends {
+        position: relative;
+        box-sizing: border-box;
+        width: 145px;
+        outline: none;
+        border: none;
+    }
+
+    &-block-trends {
+        padding: 10px;
+        width: 156px;
+    }
+
+    &-desc2 {
+        color: #6F6E6E;   
+    }
+
+    &-block-size {
+        padding: 10px;
+        width: 74px;
+    }
+
+    &-size-cbx {
+        border: 1px solid #EBEBEB;
+    }
+
+    &-size-desc {
+        padding-left: 9px;
+    }
+
+    &-size-li {
+        list-style-type: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+        
+        &:not(:last-child) {
+            padding-bottom: 6px;
+        }
+    }
+
+    &-block-price {
+        padding: 10px;
+        width: 115px;
+    }
+}
