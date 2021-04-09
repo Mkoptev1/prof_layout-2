@@ -13,13 +13,23 @@
         width: 360px;
         height: 260px;
         background: rgba(33, 22, 22, 0.7);
+        overflow: hidden;
+    }
+
+    &-item-img {
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &-full-width {
         position: relative;
         text-align: center;
         width: 100%;
-        background: rgba(33, 22, 22, 0.7)
+        background: rgba(33, 22, 22, 0.7);
+        overflow: hidden;
     }
 
     &-item-text {

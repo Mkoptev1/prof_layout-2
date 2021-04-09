@@ -421,6 +421,19 @@
   width: 360px;
   height: 260px;
   background: rgba(33, 22, 22, 0.7);
+  overflow: hidden;
+}
+
+.offer-item-img {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.offer-item-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .offer-full-width {
@@ -428,6 +441,7 @@
   text-align: center;
   width: 100%;
   background: rgba(33, 22, 22, 0.7);
+  overflow: hidden;
 }
 
 .offer-item-text {
