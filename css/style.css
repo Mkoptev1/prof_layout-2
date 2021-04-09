@@ -885,44 +885,53 @@
   border: none;
 }
 
-.filter:hover {
+.filter-optn-color:hover .filter-desc {
   color: #F16D7F;
 }
 
-.filter:hover svg {
+.filter-optn-color:hover svg {
   fill: #F16D7F;
 }
 
-.filter[open] {
-  padding-left: 16px;
-  background: #FFFFFF;
-  outline: none;
-  border: none;
-  z-index: 1;
+.filter-optn-color[open] {
   color: #F16D7F;
 }
 
-.filter[open] svg {
+.filter-optn-color[open] svg {
   fill: #F16D7F;
+}
+
+.filter-optn-color[open] .filter-desc {
+  color: #F16D7F;
 }
 
 .filter-desc {
+  white-space: nowrap;
   outline: none;
   border: none;
   list-style-type: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
-.filter-content {
+.filter-block {
   margin-top: 10px;
-  padding-left: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
   background: #FFFFFF;
-  width: 360px;
-  left: 0;
+  left: inherit;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 1;
+}
+
+.filter-block-filter {
+  padding-left: 17px;
+  width: 360px;
 }
 
 .filter-container {
@@ -1032,6 +1041,67 @@
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+}
+
+.filter-value:hover .filter-desc2 {
+  color: #F16D7F;
+}
+
+.filter-value:hover svg {
+  fill: #F16D7F;
+}
+
+.filter-value:not(:first-child) {
+  padding-left: 28px;
+}
+
+.filter-trends {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 145px;
+  outline: none;
+  border: none;
+}
+
+.filter-block-trends {
+  padding: 10px;
+  width: 156px;
+}
+
+.filter-desc2 {
+  color: #6F6E6E;
+}
+
+.filter-block-size {
+  padding: 10px;
+  width: 74px;
+}
+
+.filter-size-cbx {
+  border: 1px solid #EBEBEB;
+}
+
+.filter-size-desc {
+  padding-left: 9px;
+}
+
+.filter-size-li {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.filter-size-li:not(:last-child) {
+  padding-bottom: 6px;
+}
+
+.filter-block-price {
+  padding: 10px;
+  width: 115px;
 }
 
 .pagination {

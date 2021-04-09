@@ -5,42 +5,53 @@
     outline: none;
     border: none;
 
-    &:hover {
-        color: $pink;
-    }
+    &-optn-color {
+        &:hover .filter-desc {
+            color: $pink;
+        }
 
-    &:hover svg {
-        @include svg-hover-pink;
-    }
+        &:hover svg {
+            @include svg-hover-pink;
+        }
 
-    &[open] {
-        padding-left: 16px;
-        background: #FFFFFF;
-        outline: none;
-        border: none;
-        z-index: 1;
-        color: $pink;
-    }
+        &[open] {
+            color: $pink;
+        }
 
-    &[open] svg{
-        fill: $pink;
+        &[open] svg{
+            fill: $pink;
+        }
+        
+        &[open] .filter-desc{
+            color: $pink;
+        }
     }
 
     &-desc {
+        white-space:nowrap;
         outline: none;
         border: none;
         list-style-type: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
     }
 
-    &-content {
+    &-block {
         margin-top: 10px;
-        padding-left: 16px;
         box-sizing: border-box;
         position: absolute;
         background: #FFFFFF;
-        width: 360px;
-        left: 0;
+        left: inherit;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        z-index: 1;
+    }
+
+    &-block-filter {
+        padding-left: 17px;
+        width: 360px;
     }
 
     &-container {
@@ -132,5 +143,67 @@
         font-size: 14px;
         line-height: 17px;
         color: #6F6E6E;
+    }
+
+    &-value {
+        &:hover .filter-desc2 {
+            color: $pink;
+        }
+
+        &:hover svg {
+            fill: $pink;
+        }
+
+        &:not(:first-child) {
+            padding-left: 28px;
+        }
+    }
+
+    &-trends {
+        position: relative;
+        box-sizing: border-box;
+        width: 145px;
+        outline: none;
+        border: none;
+    }
+
+    &-block-trends {
+        padding: 10px;
+        width: 156px;
+    }
+
+    &-desc2 {
+        color: #6F6E6E;   
+    }
+
+    &-block-size {
+        padding: 10px;
+        width: 74px;
+    }
+
+    &-size-cbx {
+        border: 1px solid #EBEBEB;
+    }
+
+    &-size-desc {
+        padding-left: 9px;
+    }
+
+    &-size-li {
+        list-style-type: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+        
+        &:not(:last-child) {
+            padding-bottom: 6px;
+        }
+    }
+
+    &-block-price {
+        padding: 10px;
+        width: 115px;
     }
 }
