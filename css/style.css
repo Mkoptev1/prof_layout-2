@@ -2,6 +2,10 @@
   padding-top: 32px;
 }
 
+.padding-top-48 {
+  padding-top: 48px;
+}
+
 .padding-top-50 {
   padding-top: 50px;
 }
@@ -14,12 +18,24 @@
   padding-top: 96px;
 }
 
+.margin-top-18 {
+  margin-top: 18px;
+}
+
 .margin-top-96 {
   margin-top: 96px;
 }
 
+.margin-top-98 {
+  margin-top: 98px;
+}
+
 .margin-top-128 {
   margin-top: 128px;
+}
+
+.padding-top-128 {
+  padding-top: 128px;
 }
 
 .padding-top-130 {
@@ -488,7 +504,16 @@
 
 .product-card-item {
   width: 360px;
-  padding-top: 16px;
+  overflow: hidden;
+  background: #F8F8F8;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.product-card-item:hover .product-card-overlay {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
 }
 
 .product-card-img-brd {
@@ -497,19 +522,53 @@
   overflow: hidden;
 }
 
+.product-card-bttn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 138px;
+  height: 43px;
+  background: transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  outline: none;
+}
+
+.product-card-bttn-img {
+  padding-left: 13px;
+  padding-right: 11px;
+}
+
 .product-card-img {
   width: 360px;
   height: 420px;
   background: #F7E4E2;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.product-card-img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.product-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 420px;
+  background-color: rgba(58, 56, 56, 0.83);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
 }
 
 .product-card-text {
@@ -553,7 +612,6 @@
 }
 
 .product-all-bttn {
-  margin-top: 48px;
   width: 211px;
   height: 47px;
   text-align: center;
@@ -901,7 +959,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 48px;
+  margin-top: 18px;
   width: 284px;
   background: #FFFFFF;
   border: 1px solid #EBEBEB;

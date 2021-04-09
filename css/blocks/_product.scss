@@ -30,7 +30,15 @@
 
     &-card-item {
         width: 360px;
-        padding-top: 16px;
+        overflow: hidden;
+        background: #F8F8F8;
+        position: relative;
+        margin-bottom: 30px;        
+
+        &:hover .product-card-overlay{
+            transition: 0.5s;
+            opacity: 1;
+        }
     }
 
     &-card-img-brd {
@@ -39,15 +47,44 @@
         overflow: hidden;
     }
 
+    &-card-bttn {
+        display: flex;
+        align-items: center;
+        width: 138px;
+        height: 43px;
+        background: transparent;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        outline: none;
+    }
+
+    &-card-bttn-img {
+        padding-left: 13px;
+        padding-right: 11px;
+    }
+
     &-card-img {
         width: 360px;
         height: 420px;
         background: #F7E4E2;
-        transition: transform 0.4s;
+    }
 
-        &:hover {
-            transform: scale(1.1);
-        }
+    &-card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 420px;
+        background-color: rgba(58, 56, 56, 0.83);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        // transition: 0.5s;
     }
 
     &-card-text {
@@ -62,6 +99,7 @@
 
     &-card-title {
         & a {
+            
             text-decoration: none;
             font-style: normal;
             font-weight: normal;
@@ -93,7 +131,6 @@
     }
 
     &-all-bttn {
-        margin-top: 48px;
         width: 211px;
         height: 47px;
         text-align: center;
