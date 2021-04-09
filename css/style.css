@@ -878,13 +878,49 @@
 
 .filter {
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 360px;
   outline: none;
   border: none;
 }
 
+.filter:hover {
+  color: #F16D7F;
+}
+
+.filter:hover svg {
+  fill: #F16D7F;
+}
+
 .filter[open] {
   padding-left: 16px;
+  background: #FFFFFF;
+  outline: none;
+  border: none;
+  z-index: 1;
+  color: #F16D7F;
+}
+
+.filter[open] svg {
+  fill: #F16D7F;
+}
+
+.filter-desc {
+  outline: none;
+  border: none;
+  list-style-type: none;
+}
+
+.filter-content {
+  margin-top: 10px;
+  padding-left: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  background: #FFFFFF;
+  width: 360px;
+  left: 0;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -933,14 +969,10 @@
   fill: #6F6E6E;
 }
 
-.filter-icon-arrow:hover {
-  fill: #F16D7F;
-}
-
 .filter-item-desc {
   display: block;
   border-left: 10px solid #F16D7F;
-  border-bottom: 1px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
   padding: 11px;
   margin-top: 16px;
   margin-right: 16px;
@@ -971,6 +1003,10 @@
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+}
+
+.filter-item-li:not(:last-child) {
+  padding-bottom: 11px;
 }
 
 .filter-icon-sort {

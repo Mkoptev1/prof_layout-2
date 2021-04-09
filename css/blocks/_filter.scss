@@ -1,11 +1,45 @@
 .filter {
     position: relative;
+    box-sizing: border-box;
     width: 360px;
     outline: none;
     border: none;
 
+    &:hover {
+        color: $pink;
+    }
+
+    &:hover svg {
+        @include svg-hover-pink;
+    }
+
     &[open] {
         padding-left: 16px;
+        background: #FFFFFF;
+        outline: none;
+        border: none;
+        z-index: 1;
+        color: $pink;
+    }
+
+    &[open] svg{
+        fill: $pink;
+    }
+
+    &-desc {
+        outline: none;
+        border: none;
+        list-style-type: none;
+    }
+
+    &-content {
+        margin-top: 10px;
+        padding-left: 16px;
+        box-sizing: border-box;
+        position: absolute;
+        background: #FFFFFF;
+        width: 360px;
+        left: 0;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 
@@ -33,16 +67,12 @@
     &-icon-arrow {
         padding-left: 11px;
         @include svg-unhover-gray;
-
-        &:hover {
-            @include svg-hover-pink;
-        }
     }
 
     &-item-desc {
         display: block;
         border-left: 10px solid $pink;
-        border-bottom: 1px solid $pink;
+        border-bottom: 1px solid #EBEBEB;
         padding: 11px;
         margin-top: 16px;
         margin-right: 16px;
@@ -73,6 +103,10 @@
         font-size: 14px;
         line-height: 17px;
         color: #6F6E6E;
+
+        &:not(:last-child) {
+            padding-bottom: 11px;
+        }
     }
 
     &-icon-sort {
