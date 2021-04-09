@@ -70,6 +70,7 @@
 
     &-options {
         display: flex;
+        align-items: center;
         margin-top: 65px;
     }
 
@@ -82,8 +83,16 @@
         color: #6F6E6E;
     }
 
-    &-optn-icon:not(:last-child) {
-        padding-right: 23px;
+    &-optn-icon {
+        @include svg-unhover-gray;
+
+        &:not(:last-child) {
+            padding-right: 23px;
+        }
+
+        &:hover {
+            @include svg-hover-pink;
+        }
     }
 
     &-bttn {

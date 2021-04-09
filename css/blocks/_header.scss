@@ -13,6 +13,14 @@
         align-items:flex-end
     }
 
+    &-menu-icon {
+        @include svg-unhover-white;
+
+        &:hover {
+            @include svg-hover-pink;
+        }
+    }
+
     &-menu-logo {
         transition: transform 0.4s;
 
