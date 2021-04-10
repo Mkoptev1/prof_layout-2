@@ -1,10 +1,12 @@
 .menu {
     display: flex;
     justify-content: space-between;
+    margin-top: 18px;
     position: absolute;
     visibility: hidden;
     right: 0px;
     width: 232px;
+    // height: $hero-height;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -64,4 +66,9 @@
     &:hover {
         @include svg-hover-pink;
     }
+}
+
+#burger-menu:checked ~ .menu {
+    visibility: visible;
+    z-index: 1;
 }

@@ -5,6 +5,12 @@
 }
 
 .wrap {
-    width: $page-wrap;
+    max-width: $page-wrap;
     margin: 0 auto;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    left: -99999999px;
 }
