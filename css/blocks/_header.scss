@@ -37,3 +37,24 @@
         padding-left: 33px;
     }
 }
+
+@media (max-width: $max-width-tablet) {
+  
+}
+
+@media (max-width: $max-width-mobile) {
+    .header {
+    
+        &-menu-reg {
+            display: none;
+        }
+
+        &-menu-cart {
+            display: none;
+        }
+
+        &-menu-search {
+            display: none;
+        }
+    }
+}

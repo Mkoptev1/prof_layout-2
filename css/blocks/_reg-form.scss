@@ -1,4 +1,5 @@
 .reg {
+    padding-top: 64px;
     display: flex;
 
     &-form-item {
@@ -99,6 +100,7 @@
     }
 
     &-benefit-item {
+        display: inline-flex;
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
@@ -117,3 +119,35 @@
         }
     }
 }
+
+// @media (max-width: $max-width-tablet) {
+//     .reg {
+//     }
+// }
+
+@media (max-width: $max-width-mobile) {
+    .reg {
+        padding-top: 40px;
+        flex-direction: column;
+
+        &-form-input {
+            width: auto;
+        }
+
+        &-benefit {
+            padding-top: 40px;
+            padding-left: 0px;
+        }
+
+        &-benefit-text {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &-benefit-item {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+

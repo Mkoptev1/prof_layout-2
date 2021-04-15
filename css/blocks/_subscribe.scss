@@ -59,3 +59,34 @@
         outline: none;
     }
 }
+
+@media (max-width: $max-width-tablet) {
+    .subscribe {
+        margin-top: 48px;
+        width: auto;
+    }
+}
+
+@media (max-width: $max-width-mobile) {
+    .subscribe {
+        width: auto;
+
+        &-desc1 {
+            width: 271px;
+        }
+
+        &-desc2 {
+            width: 271px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &-email {
+           width: 152px;
+        }
+
+        &-submit {
+            margin-left: -3px;
+        }
+    }
+}

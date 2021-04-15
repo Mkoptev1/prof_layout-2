@@ -5,18 +5,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+    } 
 
     &-item {
         position: relative;
         text-align: center;
-        width: 360px;
+        width: 33.33%;
         height: 260px;
         background: rgba(33, 22, 22, 0.7);
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background: #FFFFFF;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
-    &-item-img {
+    &-item-img {   
         transition: transform 0.4s;
 
         &:hover {
@@ -60,5 +67,29 @@
         text-align: center;
         height: 180px;
         background: rgba(33, 22, 22, 0.7);
+    }
+}
+
+@media (max-width: $max-width-tablet) {
+    .offer {
+        &-item {
+            height: 167.62px;
+
+            &:not(:last-child) {
+                margin-right: 19px;
+            }
+        }
+    }
+}
+
+@media (max-width: $max-width-mobile) {
+    .offer {
+        &-item {
+            margin-right: 0px;
+        }
+
+        &-full-width {
+            height: 116px;
+        }
     }
 }

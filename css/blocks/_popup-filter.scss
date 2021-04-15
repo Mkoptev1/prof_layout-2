@@ -1,7 +1,6 @@
 .filter {
     position: relative;
     box-sizing: border-box;
-    width: 360px;
     outline: none;
     border: none;
 
@@ -57,7 +56,6 @@
     &-container {
         padding-top: 51px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
@@ -65,7 +63,7 @@
         display: flex;
         justify-content: start;
         align-items: center;
-        width: 360px;
+        padding-right: 320px;
     }
 
     &-row {
@@ -122,6 +120,8 @@
 
     &-icon-sort {
         padding-left: 11px;
+        width: 15px;
+        height: 10px;
         @include svg-unhover-black;
 
         &:hover {
@@ -162,14 +162,13 @@
     &-trends {
         position: relative;
         box-sizing: border-box;
-        width: 145px;
         outline: none;
         border: none;
     }
 
     &-block-trends {
         padding: 10px;
-        width: 156px;
+        width: 112px;
     }
 
     &-desc2 {
@@ -205,5 +204,68 @@
     &-block-price {
         padding: 10px;
         width: 115px;
+    }
+}
+
+@media (max-width: $max-width-tablet) {
+    .filter {
+        &-section {
+            padding-right: 0px;
+            justify-content: space-between;
+        }
+
+        &-container {
+            justify-content: space-between;
+        }    
+    }
+}
+
+@media (max-width: $max-width-mobile) {
+    .filter {
+        &-color-desc {
+            display: none;
+        }
+
+        &-icon-sort {
+            width: 37px;
+            height: 25px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        &-block-filter {
+            width: 344px;
+        }
+
+        &-section {
+            padding-right: 0px;
+        }
+
+        &-container {
+            justify-content: space-between;
+        }
+
+        &-desc {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        &-value {
+            &:not(:first-child) {
+                padding-left: 22px;
+            }
+        }
+
+        &-block-trends {
+            width: 132px;
+        }
+    
+        &-block-size {
+            width: 62px;
+        }
+
+        &-block-price {
+            width: 60px;
+        }
     }
 }

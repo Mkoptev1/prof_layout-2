@@ -5,7 +5,7 @@
 }
 
 .wrap {
-    max-width: $page-wrap;
+    max-width: $page-wrap-desctop;
     margin: 0 auto;
 }
 
@@ -13,4 +13,16 @@
     visibility: hidden;
     position: absolute;
     left: -99999999px;
+}
+
+@media (max-width: $max-width-tablet) {
+    .wrap {
+        max-width: $page-wrap-tablet;
+    }
+}
+
+@media (max-width: $max-width-mobile) {
+    .wrap {
+        max-width: $page-wrap-mobile;
+    }
 }

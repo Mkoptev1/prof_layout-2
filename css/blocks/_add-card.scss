@@ -96,10 +96,10 @@
     }
 
     &-bttn {
+        margin-top: 48px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        margin-top: 48px;
+        justify-content: flex-start;        
         width: 211px;
         height: 47px;
         outline: none;
@@ -122,5 +122,23 @@
         padding-left: 23px;
         padding-right: 23px;
         fill: $pink;
+    }
+}
+
+
+@media (max-width: $max-width-mobile) {
+    .add-card {
+        &-line2 {
+            margin-top: 32px;
+            width: 174px;
+        }
+
+        &-options {
+            margin-top: 49px;
+        }
+
+        &-bttn {
+            margin-top: 64px;
+        }
     }
 }

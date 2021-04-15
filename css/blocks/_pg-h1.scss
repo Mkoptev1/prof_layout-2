@@ -8,6 +8,10 @@
         height: 148px;    
     }
 
+    .pg-h1-desc-only {
+        justify-content: center;
+    }
+
     &-desc {
         font-style: normal;
         font-weight: normal;
@@ -27,5 +31,26 @@
     &-crumbl-color {
         font-weight: 700;
         color: $pink;
+    }
+}
+
+@media (max-width: $max-width-mobile) {
+    .pg-h1 {
+        &-wrap {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &-desc {
+            padding-top: 24px;
+        }
+
+        &-desc-only {
+            padding-top: 0px;
+        }
+
+        &-crumbl {
+            padding-top: 32px;
+        }
     }
 }

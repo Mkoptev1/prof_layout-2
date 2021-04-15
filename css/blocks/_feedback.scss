@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: #E5E5E5;
     background-image: url(../img/footer_form_bg.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 448px;
@@ -37,5 +38,39 @@
         line-height: 24px;
         text-align: center;
         color: #222224;
+    }
+}
+
+@media (max-width: $max-width-tablet) {
+    .feedback {
+        justify-content: inherit;
+        flex-direction: column;
+        height: 693px;
+
+        &-wrap {
+            flex-direction: column;
+        }
+
+        &-face {
+            margin-top: 54px;
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: $max-width-mobile) {
+    .feedback {
+        height: 550px;
+
+        &-face-desc {
+            font-size: 19px;
+            line-height: 22px;
+            width: 343px;
+        }
+
+        &-face {
+            margin-top: 54px;
+            width: auto;
+        }
     }
 }

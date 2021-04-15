@@ -73,3 +73,24 @@
         width: 96px;
     }
 }
+
+@media (max-width: $max-width-mobile) {
+    .goods-optn {
+        &-desc {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &-block-color {
+            width: 112px;
+        }
+    
+        &-block-size {
+            width: 100px;
+        }
+    
+        &-block-qnt {
+            width: 84px;
+        }
+    }
+}

@@ -21,7 +21,7 @@
                             height="38">
                     </a>
                 </li>
-                <li class="header-menu-left-item">
+                <li class="header-menu-left-item header-menu-search">
                     <a href="#">
                         <svg class="header-menu-icon" width="27" height="28" viewBox="0 0 27 28"
                             xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="header-menu-right-item">
+                <li class="header-menu-right-item header-menu-reg">
                     <a href="registration.html">
                         <svg class="header-menu-icon" width="29" height="29" viewBox="0 0 29 29"
                             xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="header-menu-right-item">
+                <li class="header-menu-right-item header-menu-cart">
                     <a href="cart.html">
                         <svg class="header-menu-icon" width="32" height="29" viewBox="0 0 32 29"
                             xmlns="http://www.w3.org/2000/svg">
@@ -115,9 +115,8 @@
         <div class="filter-container wrap">
             <div class="filter-section">
                 <details class="filter filter-optn-color">
-                    <summary class="filter-desc">FILTER
-                        <svg class="filter-icon-sort" width="15" height="10" viewBox="0 0 15 10"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <summary class="filter-desc"><span class="filter-color-desc">FILTER</span>
+                        <svg class="filter-icon-sort" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
                         </svg>
@@ -200,10 +199,7 @@
                     <div class="filter-block filter-block-price">
                     </div>
                 </details>
-                <div class="filter-section">
-                </div>
             </div>
-            <div class="filter-section"></div>
         </div>
         <div class="catalogs padding-top-50 wrap">
             <div class="catalogs-card">
@@ -310,7 +306,9 @@
                     </div>
                 </div>
                 <div class="product-card-item">
-                    <img class="product-card-img" src="img/product-7.jpg" alt="Товар">
+                    <div class="product-card-img-brd">
+                        <img class="product-card-img" src="img/product-7.jpg" alt="Товар">
+                    </div>
                     <div class="product-card-overlay">
                         <button class="product-card-bttn">
                             <img class="product-card-bttn-img" src="img/add-to-card-cat.svg" alt="Добавить в корзину">
@@ -325,7 +323,9 @@
                     </div>
                 </div>
                 <div class="product-card-item">
-                    <img class="product-card-img" src="img/product-8.jpg" alt="Товар">
+                    <div class="product-card-img-brd">
+                        <img class="product-card-img" src="img/product-8.jpg" alt="Товар">
+                    </div>
                     <div class="product-card-overlay">
                         <button class="product-card-bttn">
                             <img class="product-card-bttn-img" src="img/add-to-card-cat.svg" alt="Добавить в корзину">
@@ -339,8 +339,10 @@
                         <p class="product-card-price">$52.00</p>
                     </div>
                 </div>
-                <div class="product-card-item">
-                    <img class="product-card-img" src="img/product-9.jpg" alt="Товар">
+                <div class="product-card-item product-last-item-hidden">
+                    <div class="product-card-img-brd">
+                        <img class="product-card-img" src="img/product-9.jpg" alt="Товар">
+                    </div>
                     <div class="product-card-overlay">
                         <button class="product-card-bttn">
                             <img class="product-card-bttn-img" src="img/add-to-card-cat.svg" alt="Добавить в корзину">

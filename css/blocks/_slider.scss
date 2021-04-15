@@ -32,3 +32,19 @@
         height: 724px;
     }
 }
+
+@media (max-width: $max-width-tablet) {
+    .slider {
+        &-img {
+            height: 585px;
+        }
+    }
+}
+
+@media (max-width: $max-width-mobile) {
+    .slider {
+        &-img {
+            height: 454px;
+        }
+    }
+}

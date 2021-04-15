@@ -38,3 +38,18 @@
         fill: #FFFFFF;
     }
 }
+
+@media (max-width: $max-width-tablet) {
+}
+
+@media (max-width: $max-width-mobile) {
+    .footer {
+        &-wrap {
+           flex-direction: column-reverse;
+        }
+
+        &-copyright {
+            padding-bottom: 9px;
+        }
+    }    
+}
